@@ -16,4 +16,4 @@ expressApp.get('/:id?', (req, res) => {
 
 const server = http.createServer(expressApp);
 
-server.listen(1234);
+server.listen(process.env.PORT || 1234);
